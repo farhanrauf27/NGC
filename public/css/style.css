@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@1,200;1,300;1,400;1,500;1,700&display=swap');
+
+
+html::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+.scroller {
+
+    overflow-y: scroll;
+    scrollbar-color: #797979 #d9d9d9;
+    scrollbar-width: thin;
+  }
+  
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin-top: 4%;
+
+}
+
+
+/* image animation */
+.avatar {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+button a {
+    color: #212529;
+    text-decoration: none;
+}
+
+button a:hover {
+    text-decoration: none;
+    color: #212529;
+}
+
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+/*  Anime End */
+
+/*  */
+.card-header,
+.modal-header {
+    font-size: 22px;
+    font-weight: bolder;
+    background: #d9d9d9;
+}
+
+.log-reg {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/*  */
+
+/* new navbar start */
+.navbar-brand
+{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #212529 !important;
+}
+
+.menu-bar {
+    background: #d9d9d9;
+}
+.navbar
+{
+    background: #d9d9d9;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #212529 !important;
+    margin: 3px;
+    font-weight: 600;
+}
+
+.navbar-nav {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.navbar-nav .navbar-toggler {
+    padding: 20px;
+    border: none !important;
+    outline: none !important;
+}
+
+.nav-link {
+    transition: .5s all ease-in-out;
+}
+
+.nav-link:hover {
+    text-decoration: 2px underline;
+}
+
+/* new navbar end */
+
+/* span */
+.full {
+    opacity: 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.full:hover {
+    transition: 300ms all ease-in-out;
+    opacity: 1;
+}
+
+/* span end */
+
+
+/* links nav end */
+
+p {
+    margin-top: 6%;
+    margin: 2%;
+    text-align: justify;
+}
+
+.subscribe {
+    margin-top: 6%;
+    margin-bottom: 2px;
+}
+
+.titles {
+    text-align: center;
+}
+
+.titles input {
+    width: 35%;
+    outline: none;
+    border: 1px solid #212529;
+    padding: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.titles input::placeholder {
+    text-align: center;
+    color: rgb(124, 124, 124);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.titles input:focus::placeholder {
+    opacity: 0;
+    transition: .3s all ease-in-out;
+}
+
+/* for simple inputs */
+input {
+    width: 100%;
+    text-align: center;
+    outline: none;
+    border: 1px solid #212529;
+    padding: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+    transition: .3s all ease-in-out;
+}
+
+/* Text Area Contact Us */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border: 1px solid #212529;
+    font-size: 18px;
+    font-weight: 600;
+    resize: none;
+}
+textarea:focus::placeholder {
+    opacity: 0;
+    transition: .3s all ease-in-out;
+}
+
+/* for input button */
+.titles form .arrow {
+    color: #212529;
+    background: transparent;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: -50px; 
+    border: none;
+}
+.fa-brands
+{
+    font-size: 25px;
+}
+
+/* Footer */
+.head
+{
+    font-size: 13px;
+    font-weight: 700;
+}
+li a p
+{
+    font-size: 12px;
+}
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    
+    font-weight: 600;
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* custom button */
+.bttn {
+    width: 100%;
+    /* color: #212529; */
+    background-color: #d9d9d9;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+
+/* Plus Icon Container */
+.add-to-cart-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.add-to-cart-icon:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Tooltip Style */
+.add-to-cart-tooltip {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    z-index: 10;
+    transition: opacity 0.2s ease;
+}
+
+.add-to-cart-icon:hover .add-to-cart-tooltip {
+    display: block;
+    opacity: 1;
+}
