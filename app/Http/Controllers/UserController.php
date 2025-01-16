@@ -10,10 +10,7 @@ class UserController extends Controller
     
     public function userTable()
 {
-    // Fetch users with type 0
     $users = User::where('type', 0)->get();
-
-    // Return the Blade view with the data
     return view('usertable', compact('users'));
 }
 

@@ -63,35 +63,19 @@ class ProductController extends Controller
                         ->with('success','Product created successfully.');
     }
      
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Product  $product
-     * @return \Illuminate\Http\Response
-     */
+    
     public function show(Product $product)
     {
         return view('products.show',compact('product'));
     }
      
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Product  $product
-     * @return \Illuminate\Http\Response
-     */
+   
     public function edit(Product $product)
     {
         return view('products.edit',compact('product'));
     }
     
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Product  $product
-     * @return \Illuminate\Http\Response
-     */
+    
     public function update(Request $request, Product $product)
     {
         $request->validate([
@@ -120,12 +104,7 @@ class ProductController extends Controller
                         ->with('success','Product updated successfully');
     }
   
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Product  $product
-     * @return \Illuminate\Http\Response
-     */
+    
     public function destroy(Product $product)
     {
         $product->delete();
@@ -135,10 +114,8 @@ class ProductController extends Controller
     }
     public function allProducts()
     {
-        // Retrieve all products from the database
         $products = Product::all();
 
-        // Pass the products to the 'allProducts' view
         return view('allProducts', compact('products'));
     }
     public function showDisplays()
@@ -178,10 +155,8 @@ public function showHeadphones()
 }
 public function productDetails($id)
 {
-    // Fetch the product by its ID
     $product = Product::findOrFail($id);
     
-    // Return the new product details view and pass the product data
     return view('products.productDetails', compact('product'));
 }
 public function download($id)

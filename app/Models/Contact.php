@@ -12,12 +12,6 @@ class Contact extends Model
     use HasFactory;
   
     public $fillable = ['name', 'email', 'phone', 'subject', 'message'];
-  
-    /**
-     * Write code on Method
-     *
-     * @return response()
-     */
     public static function boot() {
   
         parent::boot();

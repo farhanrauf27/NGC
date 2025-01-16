@@ -13,11 +13,6 @@ class Submail extends Model
 
     public $fillable = ['email'];
 
-    /**
-     * Write code on Method
-     *
-     * @return response()
-     */
     public static function boot()
     {
 

@@ -7,22 +7,11 @@ use Illuminate\Http\Request;
 
 class SubmailController extends Controller
 {
-    
-    /**
-     * Write code on Method
-     *
-     * @return response()
-     */
     public function submail()
     {
         return view('welcome');
     }
   
-    /**
-     * Write code on Method
-     *
-     * @return response()
-     */
     public function substore(Request $request)
     {
         $request->validate([

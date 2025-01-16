@@ -13,12 +13,8 @@ class SubscriptionController extends Controller
         $request->validate([
             'email' => 'required|email',
         ]);
-
         $email = $request->email;
-
-        // Send the subscription email
         Mail::to($email)->send(new SubscriptionEmail($email));
-
         return back()->with('success', 'Thank you for subscribing! A confirmation email has been sent to your inbox.');
     }
 }

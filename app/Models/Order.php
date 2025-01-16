@@ -13,7 +13,6 @@ class Order extends Model
         'user_id', 'address', 'city', 'zip', 'phone', 'total', 'status'
     ];
 
-    // A single order belongs to a user
     public function user()
     {
         return $this->belongsTo(User::class);
